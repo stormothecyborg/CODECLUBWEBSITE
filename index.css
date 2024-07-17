@@ -229,12 +229,27 @@
   padding: var(--padding-3xs) var(--padding-xl) var(--padding-8xs);
   box-sizing: border-box;
 }
+/* Default styles for .container and .title */
 .container {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: var(--gap-5xl);
   min-width: 338px;
   max-width: 100%;
 }
+
+.title {
+  text-align: center;
+}
+
+.welcome, .code-club {
+  font-size: 2rem; /* Default font size for larger screens */
+  line-height: 1.4;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+
 .image {
   border: 0;
   background-color: rgba(217, 217, 217, 0.5);
@@ -244,36 +259,30 @@
   align-self: stretch;
   position: relative;
 }
+/* General Styles */
 .hero-image {
-  flex: 1;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-9xs) 0 0;
-  box-sizing: border-box;
-  min-width: 338px;
-  max-width: 100%;
-}
-.hero-content,
-.hero-description {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.hero-description {
-  width: 1100px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: var(--gap-41xl);
-  max-width: 100%;
-}
-.hero-content {
   justify-content: center;
-  padding: 0 var(--padding-xl);
-  box-sizing: border-box;
-  flex-shrink: 0;
+  align-items: center;
 }
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 .hero-content,
 .section,
 .shape-icon,
@@ -281,6 +290,51 @@
   align-self: stretch;
   max-width: 100%;
 }
+
+/* General Styles */
+.hero-description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* Allow absolute positioning of children */
+}
+
+.hero-description .container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.hero-description .title {
+  font-size: 2.5rem; /* Adjust based on your preference */
+  line-height: 1.2;
+  position: absolute; /* Position absolutely within hero-description */
+  bottom: 30px; /* Increased bottom padding */
+  left: 200px; /* Increased left padding */
+}
+
+.hero-description .welcome,
+.hero-description .code-club {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-description .title {
+    font-size: 1.8rem; /* Adjust the size for mobile view */
+    bottom: 40px; /* Increased bottom padding for mobile */
+    left: 40px; /* Move towards the left within the container */
+    transform: translateX(0); /* Reset horizontal centering */
+  }
+}
+
+
+
+
+
 .shape-icon {
   position: relative;
   overflow: hidden;
@@ -1478,3 +1532,4 @@
 .shape-icon {
   display: none;
 }
+
