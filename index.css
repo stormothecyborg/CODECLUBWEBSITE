@@ -1386,4 +1386,57 @@
     line-height: 22px;
   }
 }
+.section {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
 
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-description {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.container {
+  margin-right: 20px;
+}
+
+.title {
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.title .welcome,
+.title .code-club {
+  margin: 0;
+  font-size: 1.2em; /* Decreased font size */
+  text-align: left;
+  line-height: 1.2; /* Slightly reduced line spacing */
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Adjusted to bring image towards the left */
+}
+
+.hero-image .image {
+  width: 600px; /* Increased image size */
+  height: 400px; /* Increased image size */
+  margin-left: 50px; /* Move image towards the right */
+}
+
+
+.shape-icon {
+  display: none;
+}
