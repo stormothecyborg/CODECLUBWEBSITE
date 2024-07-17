@@ -1,4 +1,3 @@
-
 .logo-removebg-preview-1-icon {
   margin-top: -13px;
   height: 54px;
@@ -381,12 +380,14 @@
   gap: var(--gap-base);
 }
 
-.item {
+ .item {
   flex: 1;
   align-items: center;
   justify-content: center;
   padding: var(--padding-xs) 0;
-}
+} 
+
+
 
 .icons1,
 .title3 {
@@ -1004,8 +1005,20 @@
   box-sizing: border-box;
   max-width: 100%;
   
-  
 }
+
+.container1, .container-join-code-club {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align items to the start vertically */
+  text-align: left; /* Align text to the left */
+  padding: 0 var(--padding-3xs); /* Adjust padding as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 100%; /* Ensure containers take full width */
+  max-width: 540px; /* Limit maximum width if needed */
+}
+
 .text,
 .title10 {
   font-family: var(--font-roboto);
@@ -1144,12 +1157,13 @@
 }
 .list1 {
   width: 420px;
-  align-items: flex-end;
-  padding: 18.5px 90px;
+  align-items: flex-end; /* Align items to the end horizontally */
+  padding: 18.5px 100px;
   box-sizing: border-box;
   max-width: 100%;
-  margin-left: 100px;
+  margin: 0 auto; /* Center the container horizontally */
 }
+
 .containeron-spot,
 .join-shape-icon {
   margin: 0 !important;
@@ -1447,9 +1461,4 @@
 
 .shape-icon {
   display: none;
-}
-@media screen and (max-width: 380rem) {
-  #hero {
-width:auto;
-height:auto;  }
 }
