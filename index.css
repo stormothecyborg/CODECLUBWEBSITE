@@ -319,10 +319,11 @@
   margin: 0 !important;
   position: absolute;
   top: 0;
-  left: 374px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: inherit;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 800;
   font-family: inherit;
 }
 
@@ -520,6 +521,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 60px; 
 }
 
 .carousel-wrapper {
@@ -550,6 +552,7 @@
   cursor: pointer;
   z-index: 2;
 }
+
 
 .left-btn {
   left: 0;
