@@ -964,32 +964,34 @@
   color: #0cda90;
   font-family: var(--font-poppins);
 }
-.description1,
-.title9 {
-  align-self: stretch;
-  position: relative;
-  font-family: var(--font-roboto);
-  color: var(--color-white);
-  text-align: center;
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left align items horizontally */
+  justify-content: flex-start; /* Align items to the start vertically */
+  text-align: left; /* Align text to the left */
+  padding: 0 var(--padding-3xs); /* Adjust padding as needed */
+  margin-left: auto; /* Move container towards the right */
 }
+
 .title9 {
   margin: 0;
   font-size: var(--font-size-21xl);
   line-height: 48px;
   font-weight: 700;
+  color: var(--color-white); /* Example: Adjust color as needed */
+  font-family: var(--font-roboto); /* Example: Adjust font family as needed */
 }
+
 .description1 {
   font-size: var(--font-size-base);
   line-height: 24px;
+  color: var(--color-white); /* Example: Adjust color as needed */
+  font-family: var(--font-roboto); /* Example: Adjust font family as needed */
 }
-.container1 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-2xs) 0;
-}
+
+
+
 .container-join-code-club {
   width: 540px;
   background-color: var(--color-gray-100);
@@ -1001,6 +1003,8 @@
   padding: 0 var(--padding-3xs);
   box-sizing: border-box;
   max-width: 100%;
+  
+  
 }
 .text,
 .title10 {
@@ -1144,6 +1148,7 @@
   padding: 18.5px 90px;
   box-sizing: border-box;
   max-width: 100%;
+  margin-left: 100px;
 }
 .containeron-spot,
 .join-shape-icon {
