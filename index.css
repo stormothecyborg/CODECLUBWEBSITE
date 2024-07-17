@@ -1414,6 +1414,9 @@
   padding: 20px;
 }
 
+.title16 {
+  font-size: smaller;
+}
 .hero-content {
   display: flex;
   justify-content: space-between;
