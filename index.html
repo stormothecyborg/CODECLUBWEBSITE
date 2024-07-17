@@ -120,85 +120,196 @@
           />
         </div>
       </section>
-      <section class="our-projects" id="our-projects">
-        <div class="project-header-wrapper">
-          <div class="project-header">
-            <h1 class="title1">PROJECTS</h1>
-            <div class="container-latest-completed-pr">
-              <div class="row">
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title2">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title3">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title4">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="upcoming-projects-icon" loading="lazy" alt="vector" src="./public/vector-200.svg" />
-      </section>
       
-      <section class="upcoming-projects" id="upcoming-events">
-        <div class="project-header-wrapper">
-          <div class="project-header">
-            <h1 class="title1">EVENTS</h1>
-            <div class="container-latest-completed-pr">
-              <div class="row">
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title6">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
+<section class="our-projects" id="our-projects">
+  <div class="project-header-wrapper">
+    <div class="project-header">
+      <h1 class="title1">PROJECTS</h1>
+      <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title2">Title 1</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
                 </div>
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title7">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title3">Title 2</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
                 </div>
-                <div class="item">
-                  <div class="completed-project-content">
-                    <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
-                    <b class="title8">Title</b>
-                    <div class="lorem-ipsum-dolor">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title4">Title 3</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title4">Title 4</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title4">Title 5</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title4">Title 6</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <img class="upcoming-projects-child" loading="lazy" alt="vector" src="./public/vector-200.svg" />
-      </section>
+        <button class="carousel-btn right-btn" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
+  <img class="upcoming-projects-icon" loading="lazy" alt="vector" src="./public/vector-200.svg" />
+</section>
+
+<script>
+  let currentIndex = 0;
+  const itemWidth = document.querySelector('.item').offsetWidth;
+  const totalItems = document.querySelectorAll('.item').length;
+  const visibleItems = 3; // Number of items visible at once
+
+  function moveCarousel(direction) {
+    // Calculate the new index
+    currentIndex += direction * visibleItems;
+
+    // Wrap around to the beginning or end if necessary
+    if (currentIndex < 0) {
+      currentIndex = totalItems - visibleItems; // Wrap to the last set of items
+    } else if (currentIndex >= totalItems) {
+      currentIndex = 0; // Wrap to the first set of items
+    }
+
+    // Calculate the new transform value
+    const newTransform = -currentIndex * itemWidth;
+
+    // Apply the new transform value
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `translateX(${newTransform}px)`;
+  }
+</script>
+
+
+      
+<section class="upcoming-projects" id="upcoming-events">
+  <div class="project-header-wrapper">
+    <div class="project-header">
+      <h1 class="title1">UPCOMING EVENTS</h1>
+      <div class="carousel-container">
+        <button class="carousel-btn left-btn" onclick="moveEventsCarousel(-1)">&#10094;</button>
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title6">Title 6</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title7">Title 7</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title8">Title 8</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title8">Title 9</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="completed-project-content">
+                <img class="icons" loading="lazy" alt="icon" src="./public/icons.svg" />
+                <b class="title8">Title 10</b>
+                <div class="lorem-ipsum-dolor">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn right-btn" onclick="moveEventsCarousel(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
+  <img class="upcoming-projects-child" loading="lazy" alt="vector" src="./public/vector-200.svg" />
+</section>
+
+<script>
+  let eventsCurrentIndex = 0;
+  const eventsItemWidth = document.querySelector('.upcoming-projects .item').offsetWidth;
+  const eventsTotalItems = document.querySelectorAll('.upcoming-projects .item').length;
+  const eventsVisibleItems = 3; // Number of items visible at once
+
+  function moveEventsCarousel(direction) {
+    // Calculate the new index
+    eventsCurrentIndex += direction * eventsVisibleItems;
+
+    // Wrap around to the beginning or end if necessary
+    if (eventsCurrentIndex < 0) {
+      eventsCurrentIndex = eventsTotalItems - eventsVisibleItems; // Wrap to the last set of items
+    } else if (eventsCurrentIndex >= eventsTotalItems) {
+      eventsCurrentIndex = 0; // Wrap to the first set of items
+    }
+
+    // Calculate the new transform value
+    const newEventsTransform = -eventsCurrentIndex * eventsItemWidth;
+
+    // Apply the new transform value
+    const eventsCarousel = document.querySelector('.upcoming-projects .carousel');
+    eventsCarousel.style.transform = `translateX(${newEventsTransform}px)`;
+  }
+</script>
+
+
+
       
       <section class="container-about-us" id="about-us">
         <div class="section1">

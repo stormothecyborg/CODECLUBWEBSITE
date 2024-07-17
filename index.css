@@ -325,35 +325,42 @@
   font-weight: 400;
   font-family: inherit;
 }
+
 .completed-project-wrapper {
   align-self: stretch;
   height: 48px;
   background-color: #f9f8f8;
 }
+
 .icons,
 .title2 {
   position: relative;
 }
+
 .icons {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title2 {
   display: inline-block;
   min-width: 62px;
 }
+
 .lorem-ipsum-dolor {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
 }
+
 .completed-project-content,
 .item {
   display: flex;
   flex-direction: column;
 }
+
 .completed-project-content {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -371,32 +378,38 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item {
   flex: 1;
   align-items: center;
   justify-content: center;
   padding: var(--padding-xs) 0;
 }
+
 .icons1,
 .title3 {
   position: relative;
 }
+
 .icons1 {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title3 {
   display: inline-block;
   min-width: 62px;
 }
+
 .completed-project-content1,
 .item1 {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .completed-project-content1 {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -414,6 +427,7 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item1 {
   height: 252px;
   align-items: center;
@@ -421,25 +435,30 @@
   padding: var(--padding-xs) 0;
   box-sizing: border-box;
 }
+
 .icons2,
 .title4 {
   position: relative;
 }
+
 .icons2 {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title4 {
   display: inline-block;
   min-width: 62px;
 }
+
 .lorem-ipsum-dolor1 {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
 }
+
 .completed-project-content2 {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -459,6 +478,7 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item2 {
   flex: 1;
   display: flex;
@@ -467,12 +487,14 @@
   justify-content: center;
   padding: var(--padding-xs) 0;
 }
+
 .container-latest-completed-pr,
 .row {
   display: flex;
   box-sizing: border-box;
   gap: var(--gap-21xl);
 }
+
 .row {
   align-self: stretch;
   height: 184px;
@@ -481,6 +503,7 @@
   justify-content: center;
   padding: 0;
 }
+
 .container-latest-completed-pr {
   flex: 1;
   flex-direction: column;
@@ -492,6 +515,50 @@
   font-size: var(--font-size-xl);
   font-family: var(--font-space-mono);
 }
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  min-width: 33.3333%; /* Show 3 items at a time */
+  box-sizing: border-box;
+  padding: 0 10px; /* Adjust as needed */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left-btn {
+  left: 0;
+}
+
+.right-btn {
+  right: 0;
+}
+
 .project-header,
 .project-header-wrapper {
   display: flex;
@@ -510,16 +577,21 @@
   padding: 0 var(--padding-xl);
   box-sizing: border-box;
 }
+/* Styles for .our-projects and .upcoming-projects-icon */
 .our-projects,
 .upcoming-projects-icon {
   align-self: stretch;
   overflow: hidden;
   max-width: 100%;
 }
+
+/* Additional styles for .upcoming-projects-icon */
 .upcoming-projects-icon {
   position: relative;
   max-height: 100%;
 }
+
+/* Styles for .our-projects */
 .our-projects {
   height: 500px;
   flex-shrink: 0;
@@ -535,6 +607,8 @@
   color: var(--color-white);
   font-family: var(--font-hubballi);
 }
+
+/* Styles for .upcoming-projects-child */
 .upcoming-projects-child {
   height: 0.5px;
   width: 100%;
@@ -546,9 +620,8 @@
   max-width: 100%;
   overflow: hidden;
 }
-.upcoming-projects1 {
-  margin: 0;
-}
+
+/* Additional styles (assuming these are for specific elements in your HTML) */
 .title5 {
   margin: 0 !important;
   position: absolute;
@@ -561,30 +634,36 @@
   display: inline-block;
   min-height: 96px;
 }
+
 .icons3,
 .title6 {
   position: relative;
 }
+
 .icons3 {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title6 {
   display: inline-block;
   min-width: 62px;
 }
+
 .lorem-ipsum-dolor2 {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
 }
+
 .icons-parent,
 .item3 {
   display: flex;
   flex-direction: column;
 }
+
 .icons-parent {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -602,6 +681,7 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item3 {
   flex: 1;
   align-items: center;
@@ -610,30 +690,37 @@
   box-sizing: border-box;
   min-width: 230px;
 }
+
+/* Repeat similar styles for .icons4, .title7, .lorem-ipsum-dolor3, .icons-group, .item4, .icons5, .title8, .lorem-ipsum-dolor4, .icons-container, .item5, .row1, .list, .upcoming-projects */
 .icons4,
 .title7 {
   position: relative;
 }
+
 .icons4 {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title7 {
   display: inline-block;
   min-width: 62px;
 }
+
 .lorem-ipsum-dolor3 {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
 }
+
 .icons-group,
 .item4 {
   display: flex;
   flex-direction: column;
 }
+
 .icons-group {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -651,6 +738,7 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item4 {
   flex: 1;
   align-items: center;
@@ -659,30 +747,36 @@
   box-sizing: border-box;
   min-width: 230px;
 }
+
 .icons5,
 .title8 {
   position: relative;
 }
+
 .icons5 {
   width: 32px;
   height: 32px;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .title8 {
   display: inline-block;
   min-width: 62px;
 }
+
 .lorem-ipsum-dolor4 {
   align-self: stretch;
   position: relative;
   font-size: var(--font-size-base);
 }
+
 .icons-container,
 .item5 {
   display: flex;
   flex-direction: column;
 }
+
 .icons-container {
   align-self: stretch;
   box-shadow: -8px -8px 24px rgba(0, 0, 0, 0.25) inset,
@@ -700,6 +794,7 @@
     var(--padding-3xl);
   gap: var(--gap-base);
 }
+
 .item5 {
   flex: 1;
   align-items: center;
@@ -708,6 +803,7 @@
   box-sizing: border-box;
   min-width: 230px;
 }
+
 .row1 {
   align-self: stretch;
   display: flex;
@@ -717,6 +813,7 @@
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
+
 .list,
 .upcoming-projects {
   display: flex;
@@ -724,6 +821,7 @@
   justify-content: center;
   max-width: 100%;
 }
+
 .list {
   width: 1000px;
   margin: 0 !important;
@@ -734,6 +832,7 @@
   font-size: var(--font-size-xl);
   font-family: var(--font-space-mono);
 }
+
 .upcoming-projects {
   align-self: stretch;
   height: 500px;
@@ -747,6 +846,10 @@
   color: var(--color-white);
   font-family: var(--font-hubballi);
 }
+
+
+
+
 .about-us2,
 .pattern-container,
 .upcoming-projects {
