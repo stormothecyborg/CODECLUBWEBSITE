@@ -907,12 +907,23 @@
 }
 
 .lorem-ipsum-dolor5 {
-  width: 1152px;
+  width: 100%; /* Extend width to 100% */
+  max-width: 1152px; /* Set a maximum width if needed */
   position: relative;
   display: inline-block;
   flex-shrink: 0;
-  max-width: 130%;
+  flex-grow: 1; /* Allow the element to grow if needed */
+  margin: 0 auto; /* Center the element within its parent container */
+  text-align: center; /* Center-align the text content inside the element */
 }
+
+.lorem-ipsum-dolor5:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+
 .about-description,
 .description-paragraph {
   display: flex;
