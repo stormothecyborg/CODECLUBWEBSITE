@@ -915,6 +915,8 @@
   flex-grow: 1; /* Allow the element to grow if needed */
   margin: 0 auto; /* Center the element within its parent container */
   text-align: center; /* Center-align the text content inside the element */
+  padding-top: 20px; /* Adjust this value to move the text lower */
+  padding-left: 20px;
 }
 
 .lorem-ipsum-dolor5:after {
