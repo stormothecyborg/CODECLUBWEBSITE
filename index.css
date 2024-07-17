@@ -859,9 +859,10 @@
   position: relative;
   flex-shrink: 0;
 }
+
 .about-us2 {
   margin: 0;
-  width: 278px;
+  width: 100%; /* Adjust width as needed */
   font-size: inherit;
   letter-spacing: 1.6px;
   line-height: 20px;
@@ -870,20 +871,25 @@
   font-family: inherit;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* Center horizontally */
+  position: absolute;
+  left: 0; /* Adjust to move towards the left */
+  margin-top: 20px;
 }
+
 .pattern-container {
   height: 204px;
   width: 853px;
   overflow: hidden;
   max-width: calc(100% - 0px);
 }
-.image1,
+
 .patternsvg-fill {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
+
 .patternsvg-fill {
   height: 284.8px;
   width: 1108px;
@@ -897,14 +903,7 @@
   padding: 144px 107px 0;
   box-sizing: border-box;
 }
-.image1 {
-  align-self: stretch;
-  justify-content: center;
-  padding: 67px 0 var(--padding-4xs) 23px;
-  position: relative;
-  opacity: 0.04;
-  z-index: 1;
-}
+
 .lorem-ipsum-dolor5 {
   width: 1152px;
   position: relative;
