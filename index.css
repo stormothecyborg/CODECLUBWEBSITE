@@ -1497,24 +1497,32 @@
 }
 
 .container {
+  margin-top: 100px; /* Adjusted top margin */
   margin-right: 20px;
+  padding-bottom:50px;
 }
 
 .title {
-  margin-bottom: 10px; /* Reduced margin */
+  padding-bottom: 150px; 
+  /* Reduced margin */
 }
 
 .title .welcome,
 .title .code-club {
   margin: 0;
-  font-size: 1.2em; /* Decreased font size */
+  font-size: 2.0em; /* Decreased font size */
   text-align: left;
-  line-height: 1.2; /* Slightly reduced line spacing */
+  line-height: 1.0; /* Slightly reduced line spacing */
 }
 
 .description {
-  margin-bottom: 20px;
+  margin-top: 40px; /* Adjusted top margin */
+  padding-left:140px;
+  padding-top: 180px;
+  text-align: center; /* Center-align the text */
+  
 }
+
 
 .hero-image {
   flex: 1;
